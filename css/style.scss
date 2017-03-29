@@ -1,0 +1,341 @@
+$font-stack: Helvetica,
+sans-serif;
+$font-size: 20px;
+$primary-color: #000000;
+$secondary-color: #eaeaea;
+$tertiary-color: #7e7e7e;
+$quaternary-color: #ffffff;
+$margin: 2em;
+$z-index-one: 0;
+$z-index-two: -1;
+$shadows: 0 0 5px 2px #cfcfcf;
+$break-small: 480px;
+$break-medium: 738px;
+$break-large: 1238px;
+
+/* ====== SMALL SCREEN ====== */
+
+@media (min-width: 320px) {
+    body {
+        font-family: $font-stack;
+        color: $primary-color;
+        font-size: $font-size;
+    }
+
+/* ======= 
+NAVIGATION 
+=======*/
+    
+    nav {
+        display: inline-block;
+        width: 100%;
+        border-bottom: 3px solid black;
+    }
+    ul {
+        list-style-type: none;
+        float: left;
+    }
+    li {
+        text-transform: uppercase;
+        
+        font-size: ($font-size - 4px);
+        margin: ($margin / 3);
+    }
+    a {
+    	text-decoration: none;
+    	color: $tertiary-color;
+    }
+    h1 {
+        font-size: ($font-size * 2);
+        float: left;
+    }
+    sup {
+        font-size: ($font-size / 2);
+    }
+    
+/* ======
+SECTION 1
+====== */
+    
+    .container1 {
+        width: 100%;
+        height: auto;
+        background-color: $secondary-color;
+        display: inline-block;
+    }
+    .inner-container {
+        height: 75%;
+        width: 75%;
+        margin-left: $margin;
+        margin-bottom: $margin;
+    }
+    .inner-container h2 {
+        font-size: $font-size;
+    }
+    .inner-container p {
+        font-size: ($font-size * 1.5);
+        font-weight: bold;
+    }
+    input {
+        -webkit-appearance: none;
+        border: none;
+        background-color: $primary-color;
+        width: 195px;
+        height: 40px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        color: $quaternary-color;
+        font-size: ($font-size * .9);
+    }
+    
+/* ======
+SECTION 2
+====== */
+    
+    .container2 {
+        width: 100%;
+    }
+    .container2-section {
+        display: inline-block;
+        width: 300px;
+        box-shadow: $shadows;
+        padding: ($margin * .5);
+        background-color: $quaternary-color;
+        margin: ($margin / 2)
+    }
+    .container2-img {
+        margin: ($margin * .25);
+    }
+    
+/* ======
+SECTION 3
+====== */
+    
+    .container3 {
+        width: 100%;
+        margin: ($margin / 2);
+    }
+    .container3-img {
+        width: 75%;
+        display: block;
+        padding: 13px;
+        border: 1px solid $secondary-color;
+    }
+    .container3-text {
+        display: block;
+    }
+    .container3-text h3 {
+        font-size: ($font-size * 1.75);
+    }
+    .container3-text h4 {
+        font-size: ($font-size);
+    }
+    .container3-text p {
+        font-size: ($font-size * .85);
+    }
+      
+/* ======
+FOOTER
+====== */
+    
+    footer {
+        border-top: 3px solid black;
+        font-size: ($font-size / 2);
+    }
+}
+
+
+/* ====== MEDIUM SCREEN ====== */
+
+@media (min-width: 768px) {
+    body {
+        font-family: $font-stack;
+        color: $primary-color;
+        font-size: $font-size;
+    }
+    
+/* ======
+NAV
+====== */
+    
+    nav {
+        float: right;
+        clear: left;
+        width: 100%;
+        border-bottom: 3px solid black;
+    }
+    ul {
+        list-style-type: none;
+        float: right;
+    }
+    li {
+        float: left;
+        text-transform: uppercase;
+        color: $tertiary-color;
+        margin: 0 $margin;
+    }
+    h1 {
+        font-size: ($font-size * 2);
+        float: left;
+    }
+    sup {
+        font-size: ($font-size / 2);
+    }
+}
+
+
+/* ====== LARGE SCREEN ====== */
+
+@media (min-width: 1024px) {
+    body {
+        font-family: $font-stack;
+        color: $primary-color;
+        font-size: $font-size;
+    }
+    
+/* ======
+NAV
+====== */
+    
+    nav {
+        float: right;
+        clear: left;
+        width: 100%;
+        border-bottom: 3px solid black;
+    }
+    ul {
+        list-style-type: none;
+        float: right;
+    }
+    li {
+        float: left;
+        text-transform: uppercase;
+        color: $tertiary-color;
+        margin: 0 $margin;
+    }
+    h1 {
+        font-size: ($font-size * 2);
+        float: left;
+    }
+    sup {
+        font-size: ($font-size / 2);
+    }
+    
+/* ======
+SECTION 1
+====== */
+    
+    .container1 {
+        width: 100%;
+        height: 560px;
+        background-color: $secondary-color;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+    }
+    .inner-container {
+        height: 180px;
+        width: 460px;
+        padding-top: 90px;
+        margin-left: ($margin * 2);
+    }
+    .inner-container h2 {
+        font-size: $font-size;
+    }
+    .inner-container p {
+        font-size: ($font-size * 2);
+        font-weight: bold;
+    }
+    input {
+        -webkit-appearance: none;
+        border: none;
+        background-color: $primary-color;
+        width: 195px;
+        height: 40px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        color: $quaternary-color;
+        font-size: ($font-size * .9);
+    }
+    
+/* ======
+SECTION 2
+====== */
+    
+    .container2 {
+        max-width: 1500px;
+        position: absolute;
+        z-index: 3;
+    }
+    .container2-section {
+        display: inline-block;
+        width: 300px;
+        box-shadow: $shadows;
+        padding: ($margin * .5);
+        margin-top: -100px;
+        margin-left: $margin;
+        margin-right: $margin;
+        background-color: $quaternary-color;
+    }
+    .container2-img {
+        margin: ($margin * .25);
+    }
+    
+/* ======
+SECTION 3
+====== */
+    
+    .container3 {
+        width: 100%;
+        height: 1000px;
+        position: relative;
+        z-index: 1;
+    }
+    .container3-inner {
+        padding-top: 25%;
+    }
+    .container3-div {
+        width: 50%;
+        float: left;
+        clear: right;
+        display: block;
+        margin: auto;
+    }
+    .container3-img {
+        width: auto;
+        display: block;
+        padding: 13px;
+        border: 1px solid $secondary-color;
+    }
+    .container3-text {
+        width: 45%;
+        float: left;
+        clear: right;
+        display: block;
+        margin: auto;
+    }
+    .container3-text h3 {
+        font-size: ($font-size * 2);
+        line-height: 14px;
+    }
+    .container3-text h4 {
+        font-size: ($font-size * 1.75);
+        line-height: 14px;
+    }
+    
+/* ======
+FOOTER
+====== */
+    
+    footer {
+        border-top: 3px solid black;
+        font-size: ($font-size * .75);
+        margin-left: $margin;
+    }
+    .footer-left {
+    	float: left;
+    }
+    .footer-right {
+    	float: right;
+    }
+}
